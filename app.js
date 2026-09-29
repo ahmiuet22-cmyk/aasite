@@ -480,7 +480,7 @@ function initProjectGallery() {
     });
 }
 
-window.showProjectDetails = function(title, category, location, desc) {
+window.showProjectDetails = function(title, category, location, desc, imgSrc) {
     const modal = document.getElementById('projectModal');
     if (!modal) return;
 
@@ -488,6 +488,17 @@ window.showProjectDetails = function(title, category, location, desc) {
     document.getElementById('mCategory').textContent = category;
     document.getElementById('mLocation').textContent = location;
     document.getElementById('mDesc').textContent = desc;
+
+    const mImg = document.getElementById('mImg');
+    const mImgWrap = document.getElementById('mImgWrap');
+    if (mImg && mImgWrap) {
+        if (imgSrc) {
+            mImg.src = imgSrc;
+            mImgWrap.style.display = 'block';
+        } else {
+            mImgWrap.style.display = 'none';
+        }
+    }
 
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');

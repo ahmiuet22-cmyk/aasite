@@ -270,8 +270,8 @@
                 <div class="about-visual reveal-fade-right">
                     <div class="about-card-3d">
                         <div class="about-img-container">
-                            <img src="assets/images/hero-construction.jpg"
-                                alt="AA Site Solutions Construction Site in West Yorkshire" class="about-real-img">
+                            <img src="assets/images/poster-all-services.jpg"
+                                alt="AA Site Solutions Construction, Clearance & Building Services West Yorkshire" class="about-real-img">
                             <div class="about-img-overlay"></div>
                             <div class="floating-metric-card">
                                 <span class="metric-num">100%</span>
@@ -814,24 +814,59 @@
             <!-- Filter Tabs -->
             <div class="gallery-filter-buttons reveal-fade-up">
                 <button class="g-filter-btn active" data-filter="all">All Projects</button>
-                <button class="g-filter-btn" data-filter="waste">Waste Removal</button>
-                <button class="g-filter-btn" data-filter="building">Building Services</button>
-                <button class="g-filter-btn" data-filter="garden">Garden Maintenance</button>
-                <button class="g-filter-btn" data-filter="contracts">Contracts Management</button>
+                <button class="g-filter-btn" data-filter="waste">Waste Removal & Clearance</button>
+                <button class="g-filter-btn" data-filter="painting">Painting & Decorating</button>
+                <button class="g-filter-btn" data-filter="driveways">Driveways & Paving</button>
+                <button class="g-filter-btn" data-filter="garden">Garden & Turf</button>
+                <button class="g-filter-btn" data-filter="contracts">Multi-Trade Services</button>
             </div>
 
             <!-- Gallery Cards Grid -->
             <div class="gallery-cards-grid" id="galleryGrid">
-                <!-- Project 1 -->
+                <!-- Project 1: Driveways -->
+                <div class="g-card-wrap" data-category="driveways">
+                    <div class="project-card">
+                        <div class="project-thumb" style="background-image: url('assets/images/poster-driveways.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Driveways & Paving</span>
+                                <h4>Block Paving & Driveway Transformation</h4>
+                                <p>Excavation, base prep, precision block paving, and clean finishing touches.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Block Paving & Driveway Transformation', 'Driveways & Paving', 'West Yorkshire', 'Complete driveway renovation: excavation, heavy base preparation, precision block paving and clean sealed finish. Strong, stylish and built to last.', 'assets/images/poster-driveways.jpg')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Painting -->
+                <div class="g-card-wrap" data-category="painting">
+                    <div class="project-card">
+                        <div class="project-thumb" style="background-image: url('assets/images/poster-painting.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Painting & Decorating</span>
+                                <h4>Full Interior & Wall Renovation</h4>
+                                <p>Surface repairs, wall & ceiling painting, woodwork trim, quality guaranteed.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Full Interior & Wall Renovation', 'Painting & Decorating', 'West Yorkshire', 'Complete interior transformation from dull & tired to bright & beautiful. Includes surface repairs, walls, ceilings, and woodwork trim painting.', 'assets/images/poster-painting.jpg')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: General Waste -->
                 <div class="g-card-wrap" data-category="waste">
                     <div class="project-card">
-                        <div class="project-thumb" style="background-image: url('assets/images/waste-removal.jpg');">
+                        <div class="project-thumb" style="background-image: url('assets/images/poster-waste.jpg');">
                             <div class="project-overlay">
                                 <span class="proj-badge">Waste Removal</span>
-                                <h4>Commercial Site Clearance</h4>
-                                <p>Prompt trade rubble and renovation debris clearing for active turnover.</p>
+                                <h4>General Yard & Rubble Clearance</h4>
+                                <p>From cluttered to cleared. Household furniture, rubble & debris cleared swiftly.</p>
                                 <button class="btn-proj-detail"
-                                    onclick="showProjectDetails('Commercial Site Clearance', 'Waste Removal', 'West Yorkshire', 'Complete clearance of masonry rubble and construction trade waste to allow following trades on site without downtime.')">
+                                    onclick="showProjectDetails('General Yard & Rubble Clearance', 'Waste Removal', 'West Yorkshire', 'Full yard clearance removing old furniture, household waste, and renovation rubble. Licensed and responsible environmental disposal.', 'assets/images/poster-waste.jpg')">
                                     <i class="fa-solid fa-expand"></i> View Details
                                 </button>
                             </div>
@@ -839,34 +874,16 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="g-card-wrap" data-category="building">
-                    <div class="project-card">
-                        <div class="project-thumb"
-                            style="background-image: url('assets/images/hero-construction.jpg');">
-                            <div class="project-overlay">
-                                <span class="proj-badge">Building Services</span>
-                                <h4>Residential Structural Works</h4>
-                                <p>Wall alterations, brick repairs, and preparatory ground works.</p>
-                                <button class="btn-proj-detail"
-                                    onclick="showProjectDetails('Residential Structural Works', 'Building Services', 'West Yorkshire', 'Quality structural building and domestic modifications completed to building regulation standards.')">
-                                    <i class="fa-solid fa-expand"></i> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
+                <!-- Project 4: Garden Turf -->
                 <div class="g-card-wrap" data-category="garden">
                     <div class="project-card">
-                        <div class="project-thumb" style="background-image: url('assets/images/thermal-deweed.jpg');">
+                        <div class="project-thumb" style="background-image: url('assets/images/poster-turf.jpg');">
                             <div class="project-overlay">
-                                <span class="proj-badge">Garden Maintenance</span>
-                                <h4>Thermal Propane De-Weeding</h4>
-                                <p>Chemical-free weed control killing roots with intense heat treatment.</p>
+                                <span class="proj-badge">Garden & Landscaping</span>
+                                <h4>Premium Garden Turf Installation</h4>
+                                <p>Ground preparation, premium quality roll turf laying with a lush green finish.</p>
                                 <button class="btn-proj-detail"
-                                    onclick="showProjectDetails('Thermal Propane De-Weeding', 'Garden Maintenance', 'West Yorkshire', 'Eco-friendly and chemical-free thermal de-weeding destroying stubborn weeds at the root, safe for families and pets.')">
+                                    onclick="showProjectDetails('Premium Garden Turf Installation', 'Garden & Landscaping', 'West Yorkshire', 'Complete garden transformation using high-grade cultivated turf rolls, leveling groundworks, and precision edging.', 'assets/images/poster-turf.jpg')">
                                     <i class="fa-solid fa-expand"></i> View Details
                                 </button>
                             </div>
@@ -874,34 +891,16 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="g-card-wrap" data-category="contracts">
-                    <div class="project-card">
-                        <div class="project-thumb"
-                            style="background-image: url('assets/images/hero-construction.jpg');">
-                            <div class="project-overlay">
-                                <span class="proj-badge">Contracts Management</span>
-                                <h4>Sub-Contractor Coordination</h4>
-                                <p>Multi-trade site supervision, safety monitoring and milestone delivery.</p>
-                                <button class="btn-proj-detail"
-                                    onclick="showProjectDetails('Sub-Contractor Coordination', 'Contracts Management', 'West Yorkshire', 'Professional site contracts management aligning trades, schedule compliance, and logistics.')">
-                                    <i class="fa-solid fa-expand"></i> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
+                <!-- Project 5: Cellar Clearance -->
                 <div class="g-card-wrap" data-category="waste">
                     <div class="project-card">
-                        <div class="project-thumb" style="background-image: url('assets/images/site-clean.jpg');">
+                        <div class="project-thumb" style="background-image: url('assets/images/poster-cellar.jpg');">
                             <div class="project-overlay">
-                                <span class="proj-badge">Waste Removal</span>
-                                <h4>Domestic Renovation Clearance</h4>
-                                <p>Full kitchen, bathroom, and household scrap disposal.</p>
+                                <span class="proj-badge">Cellar & Basement</span>
+                                <h4>Full Cellar Rubbish & Debris Clearance</h4>
+                                <p>Cleared out damp debris, old boxes, and clutter to recover clean usable space.</p>
                                 <button class="btn-proj-detail"
-                                    onclick="showProjectDetails('Domestic Renovation Clearance', 'Waste Removal', 'West Yorkshire', 'Fast removal and eco-responsible disposal of refurbishment materials and bulky domestic waste.')">
+                                    onclick="showProjectDetails('Full Cellar Rubbish & Debris Clearance', 'Cellar Clearance', 'West Yorkshire', 'Complete cellar waste clearance: junk removal, masonry rubble clearing, and sweep-clean finish to reclaim valuable space.', 'assets/images/poster-cellar.jpg')">
                                     <i class="fa-solid fa-expand"></i> View Details
                                 </button>
                             </div>
@@ -909,17 +908,50 @@
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="g-card-wrap" data-category="building">
+                <!-- Project 6: Skip Filling -->
+                <div class="g-card-wrap" data-category="waste">
                     <div class="project-card">
-                        <div class="project-thumb"
-                            style="background-image: url('assets/images/hero-construction.jpg');">
+                        <div class="project-thumb" style="background-image: url('assets/images/poster-skip.jpg');">
                             <div class="project-overlay">
-                                <span class="proj-badge">Building Services</span>
-                                <h4>Ground Preparation & Masonry</h4>
-                                <p>Leveling, foundation prep, and brick wall refurbishment.</p>
+                                <span class="proj-badge">Skip Filling</span>
+                                <h4>Reliable Skip Loading & Sorting</h4>
+                                <p>Safe, secure and rapid skip loading for builders, trades and homeowners.</p>
                                 <button class="btn-proj-detail"
-                                    onclick="showProjectDetails('Ground Preparation & Masonry', 'Building Services', 'West Yorkshire', 'Precision ground clearing and expert brickwork support for construction contractors.')">
+                                    onclick="showProjectDetails('Reliable Skip Loading & Sorting', 'Skip Filling', 'West Yorkshire', 'Fast and organized skip loading service. We fill skips efficiently, handle heavy masonry and site trade debris safely.', 'assets/images/poster-skip.jpg')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Alleyway Ground Clearance -->
+                <div class="g-card-wrap" data-category="waste">
+                    <div class="project-card">
+                        <div class="project-thumb" style="background-image: url('assets/images/gallery-clearance-alley.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Site Clearance</span>
+                                <h4>Pathway & Access Clearance</h4>
+                                <p>Thorough debris, wood and weed removal restoring clean pedestrian access.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Pathway & Access Clearance', 'Site Clearance', 'West Yorkshire', 'Full pathway clearout removing broken doors, timber waste, and ground overgrowth for safe residential access.', 'assets/images/gallery-clearance-alley.jpg')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Multi-Trade Operations -->
+                <div class="g-card-wrap" data-category="contracts">
+                    <div class="project-card">
+                        <div class="project-thumb" style="background-image: url('assets/images/poster-all-services.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Multi-Trade Operations</span>
+                                <h4>One Team. Endless Solutions.</h4>
+                                <p>Chimney removal, plumbing, electrical, driveways, clearance & building works.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('One Team. Endless Solutions.', 'Multi-Trade Operations', 'West Yorkshire', 'End-to-end site solutions covering chimney removal, cellar clearance, plumbing, electrical, painting, and complete building works.', 'assets/images/poster-all-services.jpg')">
                                     <i class="fa-solid fa-expand"></i> View Details
                                 </button>
                             </div>
@@ -935,6 +967,9 @@
                     <button class="modal-close" onclick="closeProjectModal()" aria-label="Close dialog"><i
                             class="fa-solid fa-xmark"></i></button>
                     <div class="modal-content">
+                        <div class="modal-img-wrap" id="mImgWrap" style="display: none; margin-bottom: 1rem; border-radius: 8px; overflow: hidden; max-height: 280px; text-align: center; background: #000;">
+                            <img id="mImg" src="" alt="Project Preview" style="max-height: 280px; width: auto; max-width: 100%; object-fit: contain; display: inline-block;">
+                        </div>
                         <span class="m-badge" id="mCategory">Category</span>
                         <h3 id="mTitle">Project Title</h3>
                         <p class="m-loc"><i class="fa-solid fa-location-dot text-orange"></i> <span id="mLocation">West
