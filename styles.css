@@ -2811,16 +2811,26 @@ button, input, select, textarea {
 /* 4. SMARTPHONES & PORTRAIT TABLETS (Max 768px) */
 @media (max-width: 768px) {
     :root {
-        --radius-lg: 18px;
-        --radius-md: 14px;
+        --radius-lg: 14px;
+        --radius-md: 12px;
+        --radius-sm: 8px;
     }
 
     body {
-        font-size: 0.95rem;
-        padding-bottom: 70px; /* Space for Mobile App Bottom Bar */
+        font-size: 0.88rem;
+        line-height: 1.55;
+        padding-bottom: 68px; /* Space for Mobile App Bottom Bar */
         width: 100%;
         max-width: 100%;
         overflow-x: hidden;
+    }
+
+    /* Compact Global Section Spacing */
+    section {
+        padding: 2.75rem 0 !important;
+        overflow: hidden;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .container {
@@ -2832,20 +2842,20 @@ button, input, select, textarea {
 
     /* Compact Mobile Header */
     .site-header {
-        height: 64px;
+        height: 58px;
         width: 100%;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.96);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
     }
 
     .site-header.scrolled {
-        height: 58px;
-        box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+        height: 52px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
     }
 
     .main-nav-logo {
-        height: 36px;
+        height: 32px;
     }
 
     .desktop-menu,
@@ -2855,18 +2865,18 @@ button, input, select, textarea {
 
     .mobile-toggle-btn {
         display: flex !important;
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
         justify-content: center;
-        gap: 4px;
-        padding: 9px;
+        gap: 3.5px;
+        padding: 7px;
     }
 
     /* Hero Mobile Section */
     .hero-section {
-        padding-top: 84px;
-        padding-bottom: 40px;
+        padding-top: 72px !important;
+        padding-bottom: 2rem !important;
         min-height: auto;
         width: 100%;
         overflow: hidden;
@@ -2874,7 +2884,7 @@ button, input, select, textarea {
 
     .hero-grid {
         grid-template-columns: 1fr !important;
-        gap: 2rem;
+        gap: 1.5rem;
         width: 100%;
     }
 
@@ -2886,91 +2896,114 @@ button, input, select, textarea {
     }
 
     .hero-badge {
-        font-size: 0.78rem;
-        padding: 0.35rem 0.75rem;
-        margin-bottom: 1rem;
+        font-size: 0.72rem;
+        padding: 0.28rem 0.65rem;
+        margin-bottom: 0.85rem;
     }
 
     .hero-heading {
-        font-size: clamp(2rem, 7.5vw, 2.65rem);
-        line-height: 1.12;
-        letter-spacing: -0.5px;
+        font-size: clamp(1.65rem, 6.2vw, 2.15rem);
+        line-height: 1.14;
+        letter-spacing: -0.4px;
+        margin-bottom: 0.85rem;
     }
 
     .hero-subtext {
-        font-size: 0.98rem;
-        line-height: 1.6;
-        margin-bottom: 1.4rem;
+        font-size: 0.88rem;
+        line-height: 1.5;
+        margin-bottom: 1.15rem;
     }
 
     .hero-actions {
         display: flex;
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 0.55rem;
         width: 100%;
+        margin-bottom: 1.25rem;
     }
 
     .hero-actions .btn {
         width: 100%;
-        padding: 0.95rem 1.4rem;
-        font-size: 0.92rem;
-        min-height: 50px;
+        padding: 0.75rem 1.15rem;
+        font-size: 0.84rem;
+        min-height: 44px;
         white-space: normal;
         text-align: center;
+        border-radius: 8px;
     }
 
     .hero-stats-strip {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.45rem;
-        margin-top: 1.35rem;
+        gap: 0.35rem;
+        margin-top: 1rem;
         width: 100%;
     }
 
     .hero-stat-pill {
-        font-size: 0.76rem;
-        padding: 0.35rem 0.65rem;
+        font-size: 0.72rem;
+        padding: 0.28rem 0.55rem;
     }
 
     .hero-tilt-card {
-        padding: 1.35rem 1.15rem;
+        padding: 1.1rem 0.95rem;
         border-radius: var(--radius-md);
         width: 100%;
+        box-sizing: border-box;
     }
 
     .hero-floating-logo {
-        max-width: 220px;
+        max-width: 170px;
     }
 
-    /* About Section Mobile */
-    .about-card-3d {
-        padding: 1.25rem 1rem;
-        width: 100%;
+    .tilt-card-bottom h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.35rem;
     }
 
-    .about-img-container {
-        height: 240px;
+    .tilt-card-bottom p {
+        font-size: 0.8rem;
+        line-height: 1.45;
     }
 
-    .floating-metric-card {
-        position: relative;
-        bottom: auto;
-        right: auto;
-        margin-top: 1rem;
-        width: 100%;
-        padding: 1rem 1.25rem;
-        box-sizing: border-box;
+    /* Section Headings Scaling */
+    .section-tag {
+        font-size: 0.72rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-heading {
+        font-size: clamp(1.35rem, 5.2vw, 1.75rem);
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+    }
+
+    .section-subtext {
+        font-size: 0.86rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    .lead-paragraph {
+        font-size: 0.92rem;
+        line-height: 1.55;
+    }
+
+    .body-paragraph {
+        font-size: 0.85rem;
+        line-height: 1.55;
     }
 
     /* Trust Strip */
     .trust-strip {
-        padding: 1.5rem 0;
+        padding: 1rem 0 !important;
     }
 
     .trust-grid {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 0.85rem;
+        gap: 0.6rem;
     }
 
     .trust-divider {
@@ -2978,179 +3011,416 @@ button, input, select, textarea {
     }
 
     .trust-box {
-        padding: 1rem 1.15rem;
+        padding: 0.8rem 0.95rem;
         background: var(--bg-surface);
         border: 1px solid var(--border-subtle);
         border-radius: var(--radius-sm);
+        gap: 0.75rem;
     }
 
-    /* Section Headings */
-    .section-heading {
-        font-size: clamp(1.65rem, 6vw, 2.15rem);
-        margin-bottom: 0.75rem;
-        line-height: 1.15;
+    .trust-icon-box {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+        flex-shrink: 0;
     }
 
-    .section-subtext {
-        font-size: 0.94rem;
-        line-height: 1.6;
+    .trust-info h4 {
+        font-size: 0.88rem;
+        margin-bottom: 2px;
+    }
+
+    .trust-info p {
+        font-size: 0.76rem;
+    }
+
+    /* About Section Mobile */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .about-card-3d {
+        padding: 1rem 0.85rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-img-container {
+        height: 200px;
+    }
+
+    .floating-metric-card {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 0.75rem;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .metric-num {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .metric-txt {
+        font-size: 0.74rem;
+        line-height: 1.35;
+    }
+
+    .value-pillars {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin: 1.25rem 0;
+    }
+
+    .pillar-item {
+        gap: 0.75rem;
+    }
+
+    .pillar-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0.95rem;
+        flex-shrink: 0;
+    }
+
+    .pillar-text h5 {
+        font-size: 0.88rem;
+        margin-bottom: 2px;
+    }
+
+    .pillar-text p {
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+
+    .about-btn-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .about-btn-row .btn {
+        width: 100%;
     }
 
     /* Services Grid */
     .services-cards-grid {
         grid-template-columns: 1fr;
-        gap: 1.25rem;
+        gap: 0.85rem;
     }
 
-    .service-card {
-        padding: 1.4rem 1.2rem;
+    .service-card,
+    .service-clean-card {
+        padding: 1.15rem 0.95rem;
+        box-sizing: border-box;
+    }
+
+    .service-card-head {
+        margin-bottom: 1rem;
+    }
+
+    .service-icon-box {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+
+    .card-number {
+        font-size: 1.3rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.05rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .service-card p {
+        font-size: 0.82rem;
+        line-height: 1.45;
+        margin-bottom: 0.85rem;
+    }
+
+    .service-features-list li {
+        font-size: 0.78rem;
+        padding: 0.25rem 0;
     }
 
     /* Interactive Before / After Slider on Mobile */
     .transformation-card {
-        padding: 1rem;
+        padding: 0.85rem;
         border-radius: var(--radius-md);
+        box-sizing: border-box;
     }
 
     .trans-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.45rem;
-        margin-bottom: 0.85rem;
+        gap: 0.35rem;
+        margin-bottom: 0.75rem;
     }
 
     .trans-instruction {
-        font-size: 0.76rem;
+        font-size: 0.72rem;
     }
 
     .before-after-slider-box {
-        height: 270px !important;
+        height: 210px !important;
         border-radius: var(--radius-sm);
         touch-action: pan-y !important;
+        width: 100%;
     }
 
     .scene-overlay-badge {
-        font-size: 0.64rem !important;
-        padding: 0.3rem 0.6rem !important;
+        font-size: 0.6rem !important;
+        padding: 0.25rem 0.5rem !important;
     }
 
     .badge-after {
-        right: 0.5rem !important;
-        bottom: 0.5rem !important;
+        right: 0.4rem !important;
+        bottom: 0.4rem !important;
     }
 
     .badge-before {
-        left: 0.5rem !important;
-        bottom: 0.5rem !important;
+        left: 0.4rem !important;
+        bottom: 0.4rem !important;
     }
 
     .slider-divider-handle .handle-knob {
-        width: 38px;
-        height: 38px;
-        font-size: 0.75rem;
+        width: 32px;
+        height: 32px;
+        font-size: 0.7rem;
     }
 
     .trans-footer {
         flex-direction: column;
         align-items: stretch;
-        gap: 1rem;
-        margin-top: 1rem;
+        gap: 0.75rem;
+        margin-top: 0.75rem;
     }
 
     .material-pills {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.4rem;
+        gap: 0.35rem;
     }
 
     .mpill {
-        font-size: 0.75rem;
-        padding: 0.35rem 0.6rem;
+        font-size: 0.72rem;
+        padding: 0.25rem 0.5rem;
     }
 
     /* Real-Time Cost Estimator Mobile UX */
     .calc-clean-box {
-        padding: 1.35rem 1.15rem;
+        padding: 1.15rem 0.95rem;
         border-radius: var(--radius-md);
+        box-sizing: border-box;
+    }
+
+    .calc-step-label {
+        font-size: 0.78rem;
+        margin-bottom: 0.5rem;
     }
 
     .calc-pill-options {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     .calc-pill-btn {
-        padding: 0.75rem 0.45rem;
-        font-size: 0.8rem;
-        min-height: 46px;
+        padding: 0.55rem 0.3rem;
+        font-size: 0.75rem;
+        min-height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+        border-radius: 6px;
     }
 
     .calc-slider-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.35rem;
+        gap: 0.25rem;
     }
 
     .calc-val-badge {
-        font-size: 0.76rem;
+        font-size: 0.72rem;
+        padding: 0.2rem 0.5rem;
     }
 
     .custom-range-slider {
-        height: 8px;
+        height: 6px;
     }
 
     .custom-range-slider::-webkit-slider-thumb {
-        width: 26px;
-        height: 26px;
+        width: 22px;
+        height: 22px;
     }
 
     .range-labels {
-        font-size: 0.66rem;
+        font-size: 0.64rem;
     }
 
     .calc-result-card {
-        padding: 1.35rem 1.15rem;
+        padding: 1.15rem 0.95rem;
         border-radius: var(--radius-md);
+        box-sizing: border-box;
     }
 
     .price-amount {
-        font-size: 2.2rem;
+        font-size: 1.85rem;
+    }
+
+    .price-period {
+        font-size: 0.75rem;
+    }
+
+    .price-desc {
+        font-size: 0.78rem;
+        margin-bottom: 1rem;
     }
 
     /* Why Us 4 Pillars */
     .why-cards-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 0.75rem;
     }
 
     .why-card {
-        padding: 1.35rem 1.15rem;
+        padding: 1.1rem 0.95rem;
+        box-sizing: border-box;
+    }
+
+    .why-icon-box {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .why-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .why-card p {
+        font-size: 0.8rem;
+        line-height: 1.45;
     }
 
     /* Timeline & Steps */
     .timeline-steps-grid {
         grid-template-columns: 1fr;
-        gap: 1.15rem;
+        gap: 0.85rem;
     }
 
     .step-card {
-        padding: 1.35rem 1.15rem;
+        padding: 1.1rem 0.95rem;
+        box-sizing: border-box;
+    }
+
+    .step-num-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .step-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .step-card p {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+
+    /* Stats Grid */
+    .stats-counter-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.65rem;
+    }
+
+    .stat-box {
+        padding: 0.95rem 0.65rem;
+        text-align: center;
+        border-radius: var(--radius-sm);
+    }
+
+    .stat-number {
+        font-size: 1.55rem;
+        line-height: 1.1;
+    }
+
+    .stat-label {
+        font-size: 0.72rem;
+    }
+
+    /* Reviews Hub */
+    .reviews-hub-box {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 1.15rem 0.95rem;
+        box-sizing: border-box;
+    }
+
+    .rating-huge {
+        font-size: 2.2rem;
+    }
+
+    /* Banner CTA */
+    .banner-cta-section {
+        padding: 2.5rem 0 !important;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.25rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cta-title {
+        font-size: 1.45rem;
+        line-height: 1.2;
+    }
+
+    .cta-sub {
+        font-size: 0.84rem;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .cta-actions .btn {
+        width: 100%;
     }
 
     /* Project Gallery Horizontal Swipe Pill Strip */
     .gallery-filter-bar {
         display: flex;
         overflow-x: auto;
-        padding-bottom: 0.5rem;
-        gap: 0.45rem;
+        padding-bottom: 0.4rem;
+        gap: 0.35rem;
         justify-content: flex-start;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
+        width: 100%;
     }
 
     .gallery-filter-bar::-webkit-scrollbar {
@@ -3159,84 +3429,127 @@ button, input, select, textarea {
 
     .g-filter-btn {
         flex-shrink: 0;
-        padding: 0.55rem 0.95rem;
-        font-size: 0.82rem;
+        padding: 0.45rem 0.8rem;
+        font-size: 0.75rem;
+        border-radius: 6px;
     }
 
     .gallery-cards-grid {
         grid-template-columns: 1fr;
-        gap: 1.25rem;
+        gap: 0.95rem;
+    }
+
+    .gallery-card-img {
+        height: 180px;
+    }
+
+    .gallery-card-body {
+        padding: 0.95rem;
+    }
+
+    .gallery-card-body h4 {
+        font-size: 0.95rem;
+    }
+
+    .gallery-card-body p {
+        font-size: 0.8rem;
     }
 
     /* Form Inputs */
     .quote-card-main {
-        padding: 1.35rem 1.15rem;
+        padding: 1.15rem 0.9rem;
         border-radius: var(--radius-md);
+        box-sizing: border-box;
     }
 
     .form-inputs-grid {
         grid-template-columns: 1fr;
-        gap: 0.9rem;
+        gap: 0.75rem;
     }
 
     .form-control {
-        font-size: 16px !important;
-        padding: 0.85rem 1rem;
+        font-size: 15px !important;
+        padding: 0.7rem 0.85rem;
+        border-radius: 6px;
     }
 
     .service-radio-grid {
         grid-template-columns: 1fr;
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     .service-radio-pill {
-        padding: 0.85rem 1rem;
-        min-height: 48px;
+        padding: 0.65rem 0.85rem;
+        min-height: 42px;
+        font-size: 0.8rem;
+        border-radius: 6px;
     }
 
     .contact-cards-row {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 0.85rem;
     }
 
     .c-card {
-        padding: 1.35rem 1.15rem;
+        padding: 1.15rem 0.95rem;
+        box-sizing: border-box;
     }
 
     /* Regional Coverage Radar */
     .coverage-box {
-        padding: 1.35rem 1.15rem;
+        padding: 1.15rem 0.95rem;
         border-radius: var(--radius-md);
+        box-sizing: border-box;
     }
 
+    .radar-pulse-graphic {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .r-1 { width: 55px; height: 55px; }
+    .r-2 { width: 105px; height: 105px; }
+    .r-3 { width: 160px; height: 160px; }
+
     .cov-district-tags {
-        gap: 0.4rem;
+        gap: 0.35rem;
     }
 
     .dtag {
-        font-size: 0.75rem;
-        padding: 0.35rem 0.6rem;
+        font-size: 0.72rem;
+        padding: 0.28rem 0.5rem;
     }
 
     /* Footer Mobile Layout */
     .footer-top-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .footer-col h4 {
+        font-size: 0.92rem;
+        margin-bottom: 0.65rem;
+    }
+
+    .footer-col p,
+    .footer-col a {
+        font-size: 0.8rem;
     }
 
     .footer-bottom-bar {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 0.85rem;
-        padding: 1.25rem 0;
+        gap: 0.65rem;
+        padding: 1rem 0;
     }
 
     .f-legal {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 0.5rem;
-        font-size: 0.78rem;
+        gap: 0.45rem;
+        font-size: 0.74rem;
     }
 
     /* NATIVE MOBILE APP BOTTOM BAR (Max 640px) */
@@ -3246,19 +3559,20 @@ button, input, select, textarea {
         left: 0;
         right: 0;
         width: 100%;
-        background: rgba(255, 255, 255, 0.94);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        border-top: 1px solid rgba(226, 232, 240, 0.8);
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+        border-top: 1px solid rgba(226, 232, 240, 0.85);
+        box-shadow: 0 -3px 16px rgba(0, 0, 0, 0.05);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
+        padding: 0.4rem 0.5rem calc(0.4rem + env(safe-area-inset-bottom, 0px));
         z-index: 9990;
         border-radius: 0;
         margin: 0;
+        box-sizing: border-box;
     }
 
     .dock-btn {
@@ -3271,10 +3585,10 @@ button, input, select, textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3px;
-        padding: 4px 8px;
-        font-size: 1.15rem;
-        border-radius: 8px;
+        gap: 2px;
+        padding: 3px 6px;
+        font-size: 1.05rem;
+        border-radius: 6px;
         transition: color 0.2s ease, transform 0.15s ease;
     }
 
@@ -3289,10 +3603,10 @@ button, input, select, textarea {
         background: transparent !important;
         box-shadow: none !important;
         color: var(--text-muted) !important;
-        font-size: 0.65rem !important;
+        font-size: 0.62rem !important;
         font-weight: 700 !important;
         padding: 0 !important;
-        letter-spacing: 0.2px;
+        letter-spacing: 0.1px;
         transform: none !important;
     }
 
@@ -3312,42 +3626,7 @@ button, input, select, textarea {
 /* 5. COMPACT SMARTPHONES (Max 480px & iPhone SE) */
 @media (max-width: 480px) {
     .container {
-        padding: 0 0.95rem;
-    }
-
-    .hero-heading {
-        font-size: 1.95rem;
-    }
-
-    .section-heading {
-        font-size: 1.6rem;
-    }
-
-    .calc-pill-options {
-        grid-template-columns: 1fr;
-    }
-
-    .price-amount {
-        font-size: 1.9rem;
-    }
-
-    .hero-floating-logo {
-        max-width: 190px;
-    }
-
-    .drawer-panel {
-        width: 88%;
-    }
-
-    .before-after-slider-box {
-        height: 240px !important;
-    }
-}
-
-/* 6. ULTRA-COMPACT / FOLDABLE COVER SCREENS (Max 340px) */
-@media (max-width: 340px) {
-    .container {
-        padding: 0 0.65rem;
+        padding: 0 0.85rem;
     }
 
     .hero-heading {
@@ -3355,16 +3634,51 @@ button, input, select, textarea {
     }
 
     .section-heading {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
+    }
+
+    .calc-pill-options {
+        grid-template-columns: 1fr;
+    }
+
+    .price-amount {
+        font-size: 1.65rem;
+    }
+
+    .hero-floating-logo {
+        max-width: 150px;
+    }
+
+    .drawer-panel {
+        width: 88%;
+    }
+
+    .before-after-slider-box {
+        height: 190px !important;
+    }
+}
+
+/* 6. ULTRA-COMPACT / FOLDABLE COVER SCREENS (Max 340px) */
+@media (max-width: 340px) {
+    .container {
+        padding: 0 0.6rem;
+    }
+
+    .hero-heading {
+        font-size: 1.45rem;
+    }
+
+    .section-heading {
+        font-size: 1.25rem;
     }
 
     .btn {
-        padding: 0.8rem 1rem;
-        font-size: 0.82rem;
+        padding: 0.65rem 0.9rem;
+        font-size: 0.78rem;
     }
 
     .main-nav-logo {
-        height: 30px;
+        height: 28px;
     }
 
     .hero-stats-strip {
@@ -3379,20 +3693,20 @@ button, input, select, textarea {
 /* 7. MOBILE LANDSCAPE ORIENTATION (Max Height 520px) */
 @media (max-height: 520px) and (orientation: landscape) {
     .site-header {
-        height: 52px;
+        height: 48px;
     }
 
     .hero-section {
-        padding-top: 68px;
-        padding-bottom: 30px;
+        padding-top: 60px !important;
+        padding-bottom: 24px !important;
     }
 
     .before-after-slider-box {
-        height: 220px !important;
+        height: 180px !important;
     }
 
     .drawer-body {
-        max-height: calc(100vh - 120px);
+        max-height: calc(100vh - 110px);
         overflow-y: auto;
     }
 
@@ -3400,5 +3714,6 @@ button, input, select, textarea {
         display: none !important;
     }
 }
+
 
 
