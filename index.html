@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA Site Solutions | Construction, Building Services & Waste Removal West Yorkshire</title>
+
+    <!-- SEO & Metadata -->
+    <meta name="description"
+        content="AA Site Solutions provides premier construction, contracts management, building works, and rapid waste clearance across West Yorkshire, England.">
+    <meta name="keywords"
+        content="AA Site Solutions, construction West Yorkshire, waste removal Leeds, building services Bradford, contracts management, site clearance, thermal de-weeding">
+    <meta name="author" content="AA Site Solutions">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AA Site Solutions | Building Tomorrow. Clearing Today.">
+    <meta property="og:description"
+        content="High-standard UK construction, site management, and waste clearance services in West Yorkshire.">
+    <meta property="og:image" content="assets/images/logo.svg">
+
+    <!-- Premium Google Fonts: Outfit (Headings) & Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome 6 Pro CDN Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="theme-light">
+
+    <!-- Subtle Ambient Cursor Glow -->
+    <div id="cursorGlow" class="cursor-glow"></div>
+
+    <!-- Ultra-Sleek Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo-wrap">
+                <img src="assets/images/logo.svg" alt="AA Site Solutions Logo" class="preloader-svg-logo">
+            </div>
+            <div class="preloader-track">
+                <div class="preloader-bar"></div>
+            </div>
+            <div class="preloader-status">INITIALIZING SITE OPERATIONS...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scrollProgressBar" class="scroll-progress-line"></div>
+
+    <!-- Sticky Clean Navigation Bar -->
+    <header id="siteHeader" class="site-header">
+        <div class="header-inner container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-link" aria-label="AA Site Solutions Home">
+                <img src="assets/images/logo.svg" alt="AA Site Solutions Logo" class="main-nav-logo">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="desktop-menu" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-item active">Home</a></li>
+                    <li><a href="#services" class="nav-item">Services</a></li>
+                    <li><a href="#waste-removal" class="nav-item">Waste Removal</a></li>
+                    <li><a href="#calculator" class="nav-item"><span class="badge-sparkle">INSTANT</span> Estimator</a>
+                    </li>
+                    <li><a href="#about" class="nav-item">About Us</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right CTA & Mobile Toggle -->
+            <div class="header-right">
+                <a href="#quote-section" class="btn btn-orange-glow btn-nav-cta">
+                    <span class="btn-text">GET A FREE QUOTE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Toggle navigation drawer"
+                    aria-expanded="false">
+                    <span class="line l1"></span>
+                    <span class="line l2"></span>
+                    <span class="line l3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Slide Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+        <div class="drawer-overlay" id="drawerBackdrop"></div>
+        <div class="drawer-panel">
+            <div class="drawer-head">
+                <img src="assets/images/logo.svg" alt="AA Site Solutions" class="drawer-logo">
+                <button id="drawerClose" class="drawer-close-btn" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="drawer-body">
+                <ul class="drawer-nav-list">
+                    <li><a href="#home" class="drawer-link">Home</a></li>
+                    <li><a href="#services" class="drawer-link">Services & Trades</a></li>
+                    <li><a href="#waste-removal" class="drawer-link">Waste & Rubble Removal</a></li>
+                    <li><a href="#calculator" class="drawer-link">Instant Cost Estimator</a></li>
+                    <li><a href="#about" class="drawer-link">About AA Solutions</a></li>
+                    <li><a href="#projects" class="drawer-link">Project Gallery</a></li>
+                    <li><a href="#contact" class="drawer-link">Contact & Coverage</a></li>
+                </ul>
+            </div>
+            <div class="drawer-foot">
+                <div class="drawer-loc">
+                    <i class="fa-solid fa-location-dot text-orange"></i>
+                    <span>West Yorkshire, England, UK</span>
+                </div>
+                <a href="#quote-section" class="btn btn-orange-glow w-100 drawer-action-btn">
+                    <span>GET INSTANT QUOTE</span>
+                    <i class="fa-solid fa-calculator"></i>
+                </a>
+                <div class="drawer-social-row">
+                    <a href="https://www.tiktok.com/@aasitesolutionsuk" target="_blank" rel="noopener noreferrer"
+                        class="social-circle">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#quote-section" class="social-circle">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clean Crisp Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-ambient-lights">
+            <div class="light-orb orb-1"></div>
+            <div class="light-orb orb-2"></div>
+        </div>
+        <div class="hero-grid-blueprint"></div>
+
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Left Text / Call to Actions -->
+                <div class="hero-text-col">
+                    <div class="hero-badge reveal-fade-up">
+                        <span class="live-dot-pulse"></span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>West Yorkshire & Surrounding Regions</span>
+                    </div>
+
+                    <h1 class="hero-heading reveal-fade-up delay-1">
+                        BUILDING TOMORROW.<br>
+                        <span class="hero-gradient-text">CLEARING TODAY.</span>
+                    </h1>
+
+                    <p class="hero-subtext reveal-fade-up delay-2">
+                        Premier construction, contracts management, and swift site waste clearance. Engineered for
+                        homeowners, property developers, and contractors across West Yorkshire.
+                    </p>
+
+                    <div class="hero-actions reveal-fade-up delay-3">
+                        <a href="#quote-section" class="btn btn-orange-glow btn-lg">
+                            <span>GET A FREE QUOTE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#calculator" class="btn btn-secondary-clean btn-lg">
+                            <i class="fa-solid fa-sliders"></i>
+                            <span>INSTANT ESTIMATOR</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats-strip reveal-fade-up delay-4">
+                        <div class="hero-stat-pill">
+                            <i class="fa-solid fa-circle-check text-orange"></i>
+                            <span>Contracts Management</span>
+                        </div>
+                        <div class="hero-stat-pill">
+                            <i class="fa-solid fa-circle-check text-orange"></i>
+                            <span>Building Works</span>
+                        </div>
+                        <div class="hero-stat-pill">
+                            <i class="fa-solid fa-circle-check text-orange"></i>
+                            <span>Fast Rubble Clearance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 3D Visual Clean Card -->
+                <div class="hero-card-col reveal-scale delay-2">
+                    <div class="hero-tilt-card" id="heroTiltCard">
+                        <div class="hero-brand-display">
+                            <img src="assets/images/logo.svg" alt="AA Site Solutions" class="hero-floating-logo">
+                        </div>
+
+                        <div class="tilt-card-bottom">
+                            <div class="badge-row">
+                                <span class="badge-tag"><i class="fa-solid fa-shield-halved"></i> TRUSTED SERVICE</span>
+                                <span class="badge-tag green"><i class="fa-solid fa-bolt"></i> FAST TURNAROUND</span>
+                            </div>
+                            <h3>West Yorkshire Site Operations</h3>
+                            <p>Residential & Commercial Building Services, Subcontractor Logistics and Licensed Waste
+                                Clearance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#trust-strip" class="scroll-cue" aria-label="Scroll to content">
+            <span class="cue-pill">
+                <span class="cue-dot"></span>
+            </span>
+            <span class="cue-label">EXPLORE</span>
+        </a>
+    </section>
+
+    <!-- Trust & Credibility Strip -->
+    <section id="trust-strip" class="trust-strip">
+        <div class="container trust-grid">
+            <div class="trust-box reveal-fade-up">
+                <div class="trust-icon-box"><i class="fa-solid fa-trowel-bricks"></i></div>
+                <div class="trust-info">
+                    <h4>Professional Building</h4>
+                    <p>Residential & commercial structural works</p>
+                </div>
+            </div>
+            <div class="trust-divider"></div>
+
+            <div class="trust-box reveal-fade-up delay-1">
+                <div class="trust-icon-box"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                <div class="trust-info">
+                    <h4>Prompt Waste Removal</h4>
+                    <p>Site clearance, trade & green waste</p>
+                </div>
+            </div>
+            <div class="trust-divider"></div>
+
+            <div class="trust-box reveal-fade-up delay-2">
+                <div class="trust-icon-box"><i class="fa-solid fa-clipboard-check"></i></div>
+                <div class="trust-info">
+                    <h4>Transparent Pricing</h4>
+                    <p>100% Free no-obligation quotations</p>
+                </div>
+            </div>
+            <div class="trust-divider"></div>
+
+            <div class="trust-box reveal-fade-up delay-3">
+                <div class="trust-icon-box"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div class="trust-info">
+                    <h4>West Yorkshire Based</h4>
+                    <p>Leeds, Bradford, Wakefield, Huddersfield & Halifax</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About AA Site Solutions -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Visual with Clean Modern Architecture Frame -->
+                <div class="about-visual reveal-fade-right">
+                    <div class="about-card-3d">
+                        <div class="about-img-container">
+                            <img src="assets/images/hero-construction.jpg"
+                                alt="AA Site Solutions Construction Site in West Yorkshire" class="about-real-img">
+                            <div class="about-img-overlay"></div>
+                            <div class="floating-metric-card">
+                                <span class="metric-num">100%</span>
+                                <span class="metric-txt">Dedicated Local Yorkshire Commitment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="about-content reveal-fade-left">
+                    <div class="section-tag">
+                        <span class="tag-line"></span>
+                        <span>ABOUT AA SITE SOLUTIONS</span>
+                    </div>
+
+                    <h2 class="section-heading">
+                        Built on Reliability.<br>
+                        <span class="text-orange">Focused on Results.</span>
+                    </h2>
+
+                    <p class="lead-paragraph">
+                        AA Site Solutions provides practical construction, building and waste removal solutions for
+                        homeowners, developers and businesses across West Yorkshire.
+                    </p>
+
+                    <p class="body-paragraph">
+                        We pride ourselves on direct communication, dependable scheduling, and professional standards on
+                        every project. Whether coordinating subcontractors for large renovations or executing quick site
+                        clearance, our objective is to make your project seamless from day one.
+                    </p>
+
+                    <div class="value-pillars">
+                        <div class="pillar-item">
+                            <div class="pillar-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="pillar-text">
+                                <h5>Coordinated Project Delivery</h5>
+                                <p>Complete trade management, on-site scheduling and workflow alignment.</p>
+                            </div>
+                        </div>
+
+                        <div class="pillar-item">
+                            <div class="pillar-icon"><i class="fa-solid fa-recycle"></i></div>
+                            <div class="pillar-text">
+                                <h5>Responsible Site Clearance</h5>
+                                <p>Prompt rubble, renovation debris, and green waste clearance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-btn-row">
+                        <a href="#quote-section" class="btn btn-orange-glow">
+                            <span>DISCUSS YOUR PROJECT</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="btn btn-secondary-clean">
+                            <span>VIEW ALL SERVICES</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Grid -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-head text-center reveal-fade-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span>OUR CORE SERVICES</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-heading">
+                    Engineered For <span class="text-orange">Excellence & Efficiency</span>
+                </h2>
+                <p class="section-subtext">
+                    Tailored building, waste management, and contractor services designed to keep your project
+                    organized, compliant, and on track.
+                </p>
+            </div>
+
+            <div class="services-cards-grid">
+                <!-- Card 01 -->
+                <div class="service-clean-card reveal-fade-up delay-1" data-service="Contracts Management">
+                    <div class="service-card-head">
+                        <span class="card-number">01</span>
+                        <div class="card-icon-wrap"><i class="fa-solid fa-diagram-project"></i></div>
+                    </div>
+                    <h3 class="service-title">CONTRACTS MANAGEMENT</h3>
+                    <p class="service-desc">
+                        Professional coordination and management of construction projects, helping keep work organised,
+                        efficient and on track from start to finish.
+                    </p>
+                    <ul class="service-specs">
+                        <li><i class="fa-solid fa-check text-orange"></i> Multi-trade coordination & scheduling</li>
+                        <li><i class="fa-solid fa-check text-orange"></i> Quality control & site milestone monitoring
+                        </li>
+                        <li><i class="fa-solid fa-check text-orange"></i> Logistics & material workflow management</li>
+                    </ul>
+                    <div class="card-action">
+                        <a href="#quote-section" class="service-link"
+                            onclick="quickSelectService('Contracts Management')">
+                            <span>REQUEST SERVICE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="service-clean-card reveal-fade-up delay-2" data-service="Building Services">
+                    <div class="service-card-head">
+                        <span class="card-number">02</span>
+                        <div class="card-icon-wrap"><i class="fa-solid fa-trowel-bricks"></i></div>
+                    </div>
+                    <h3 class="service-title">BUILDING SERVICES</h3>
+                    <p class="service-desc">
+                        Reliable building solutions for residential and commercial projects, tailored around your
+                        specific architectural and site requirements.
+                    </p>
+                    <ul class="service-specs">
+                        <li><i class="fa-solid fa-check text-orange"></i> Structural alterations & domestic renovation
+                        </li>
+                        <li><i class="fa-solid fa-check text-orange"></i> Brickwork, repairs & preparatory groundworks
+                        </li>
+                        <li><i class="fa-solid fa-check text-orange"></i> Commercial property maintenance</li>
+                    </ul>
+                    <div class="card-action">
+                        <a href="#quote-section" class="service-link" onclick="quickSelectService('Building Services')">
+                            <span>REQUEST SERVICE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 03: Waste Removal -->
+                <div class="service-clean-card featured reveal-fade-up delay-3" data-service="Waste Removal">
+                    <div class="featured-ribbon">POPULAR SERVICE</div>
+                    <div class="service-card-head">
+                        <span class="card-number">03</span>
+                        <div class="card-icon-wrap"><i class="fa-solid fa-dumpster-fire"></i></div>
+                    </div>
+                    <h3 class="service-title">WASTE REMOVAL & CLEARANCE</h3>
+                    <p class="service-desc">
+                        Efficient site and property waste removal solutions designed to keep spaces clear, organised,
+                        safe, and ready for their next stage.
+                    </p>
+                    <ul class="service-specs">
+                        <li><i class="fa-solid fa-check text-orange"></i> Construction rubble & builders waste</li>
+                        <li><i class="fa-solid fa-check text-orange"></i> House & commercial clearances</li>
+                        <li><i class="fa-solid fa-check text-orange"></i> Rapid load & go options available</li>
+                    </ul>
+                    <div class="card-action">
+                        <a href="#waste-removal" class="service-link">
+                            <span>EXPLORE CLEARANCE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="service-clean-card reveal-fade-up delay-4" data-service="Contractors & Sub-Contractors">
+                    <div class="service-card-head">
+                        <span class="card-number">04</span>
+                        <div class="card-icon-wrap"><i class="fa-solid fa-users-gear"></i></div>
+                    </div>
+                    <h3 class="service-title">CONTRACTORS & SUB-CONTRACTORS</h3>
+                    <p class="service-desc">
+                        Flexible contractor and subcontractor support for construction, renovation, and ongoing
+                        development project requirements.
+                    </p>
+                    <ul class="service-specs">
+                        <li><i class="fa-solid fa-check text-orange"></i> Skilled trade workforce provision</li>
+                        <li><i class="fa-solid fa-check text-orange"></i> Subcontractor partnership agreements</li>
+                        <li><i class="fa-solid fa-check text-orange"></i> Scalable on-site staffing support</li>
+                    </ul>
+                    <div class="card-action">
+                        <a href="#quote-section" class="service-link"
+                            onclick="quickSelectService('Contractors & Sub-Contractors')">
+                            <span>REQUEST SERVICE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 05: Garden & Site Maintenance -->
+                <div class="service-clean-card span-full-card reveal-fade-up delay-2"
+                    data-service="Garden & Outdoor Maintenance">
+                    <div class="garden-banner-content">
+                        <div class="garden-badge"><i class="fa-solid fa-leaf"></i> ECO-FRIENDLY & CHEMICAL FREE</div>
+                        <div class="garden-split">
+                            <div class="garden-info">
+                                <h3 class="service-title">GARDEN MAINTENANCE & THERMAL DE-WEEDING</h3>
+                                <p class="service-desc">
+                                    Specialized eco-friendly garden care utilizing propane thermal weed control (kills
+                                    weeds at root level without harsh chemicals, safe for pets & children). Also
+                                    offering precision lawn mowing, hedge trimming, and green waste clearance.
+                                </p>
+                                <div class="garden-tag-pills">
+                                    <span class="gtag"><i class="fa-solid fa-fire-flame-curved"></i> Thermal Heat
+                                        De-Weeding</span>
+                                    <span class="gtag"><i class="fa-solid fa-paw"></i> Pet & Family Safe</span>
+                                    <span class="gtag"><i class="fa-solid fa-scissors"></i> Hedge & Lawn Mowing</span>
+                                    <span class="gtag"><i class="fa-solid fa-truck"></i> Green Waste Removal</span>
+                                </div>
+                            </div>
+                            <div class="garden-img-box">
+                                <img src="assets/images/thermal-deweed.jpg" alt="Thermal Propane De-Weeding Treatment"
+                                    class="garden-preview-photo">
+                            </div>
+                            <div class="garden-cta-col">
+                                <a href="#quote-section" class="btn btn-orange-glow"
+                                    onclick="quickSelectService('Garden & Outdoor Maintenance')">
+                                    <span>GET GARDEN QUOTE</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Before / After Waste Clearance Section -->
+    <section id="waste-removal" class="waste-showcase-section">
+        <div class="container">
+            <div class="section-head text-center reveal-fade-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span>SITE CLEARANCE & TRANSFORMATION</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-heading">
+                    CLEAR THE SITE.<br>
+                    <span class="text-orange">MOVE THE PROJECT FORWARD.</span>
+                </h2>
+                <p class="section-subtext">
+                    Accumulated construction rubble, trade waste, and clutter delay workflows and create hazards. We
+                    clear spaces swiftly so your builders or tenants can proceed.
+                </p>
+            </div>
+
+            <!-- Before / After Interactive Transformer Box -->
+            <div class="transformation-card reveal-scale">
+                <div class="trans-header">
+                    <div class="trans-indicator">
+                        <span class="pulse-green-dot"></span>
+                        <span>INTERACTIVE SITE CLEARANCE SLIDER</span>
+                    </div>
+                    <span class="trans-instruction"><i class="fa-solid fa-arrows-left-right"></i> Drag slider left /
+                        right to compare</span>
+                </div>
+
+                <div class="before-after-slider-box" id="baSliderContainer">
+                    <!-- AFTER Layer (Underneath) -->
+                    <div class="slider-layer layer-after">
+                        <img src="assets/images/site-clean.jpg" alt="Pristine cleared site after clearance"
+                            class="slider-photo">
+                        <div class="scene-overlay-badge badge-after">AFTER: 100% CLEARED & READY</div>
+                    </div>
+
+                    <!-- BEFORE Layer (Clipped) -->
+                    <div class="slider-layer layer-before" id="baBeforeLayer">
+                        <img src="assets/images/waste-removal.jpg"
+                            alt="Construction site with rubble and skip before clearance" class="slider-photo">
+                        <div class="scene-overlay-badge badge-before">BEFORE: ACCUMULATED RUBBLE & WASTE</div>
+                    </div>
+
+                    <!-- Draggable Handle -->
+                    <div class="slider-divider-handle" id="baDividerHandle">
+                        <div class="handle-bar"></div>
+                        <div class="handle-knob">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Capabilities -->
+                <div class="trans-footer">
+                    <div class="material-pills">
+                        <span class="mpill"><i class="fa-solid fa-cubes"></i> Brick & Concrete</span>
+                        <span class="mpill"><i class="fa-solid fa-tree"></i> Timber & Wood</span>
+                        <span class="mpill"><i class="fa-solid fa-sheet-plastic"></i> Plasterboard & Metals</span>
+                        <span class="mpill"><i class="fa-solid fa-seedling"></i> Soil & Green Waste</span>
+                    </div>
+                    <a href="#quote-section" class="btn btn-orange-glow" onclick="quickSelectService('Waste Removal')">
+                        <span>REQUEST A WASTE REMOVAL QUOTE</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-Time Interactive Instant Cost Estimator -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <div class="calc-clean-box reveal-fade-up">
+                <div class="calc-grid">
+                    <!-- Left Config Controls -->
+                    <div class="calc-controls-col">
+                        <div class="section-tag">
+                            <span class="tag-line"></span>
+                            <span>INSTANT ONLINE ESTIMATOR</span>
+                        </div>
+                        <h2 class="calc-heading">Estimate Your Job in <span class="text-orange">Seconds</span></h2>
+                        <p class="calc-sub">Choose your project specifications below to calculate an estimated guideline
+                            range for West Yorkshire.</p>
+
+                        <div class="calc-form">
+                            <!-- Service Type -->
+                            <div class="calc-step-group">
+                                <label class="calc-label">1. Select Service Category</label>
+                                <div class="calc-pill-options" id="calcServiceSelector">
+                                    <button type="button" class="calc-pill-btn active" data-val="waste">Waste
+                                        Removal</button>
+                                    <button type="button" class="calc-pill-btn" data-val="building">Building
+                                        Works</button>
+                                    <button type="button" class="calc-pill-btn" data-val="garden">Garden /
+                                        De-Weeding</button>
+                                    <button type="button" class="calc-pill-btn" data-val="contracts">Contracts
+                                        Management</button>
+                                </div>
+                            </div>
+
+                            <!-- Scale / Volume Slider -->
+                            <div class="calc-step-group">
+                                <div class="calc-slider-header">
+                                    <label class="calc-label" id="calcVolumeLabel">2. Estimated Volume / Scope</label>
+                                    <span class="calc-val-badge" id="calcScaleDisplay">Medium Load (Half Van / Site
+                                        Area)</span>
+                                </div>
+                                <input type="range" id="calcScaleRange" min="1" max="4" value="2"
+                                    class="custom-range-slider">
+                                <div class="range-labels">
+                                    <span>Small / Single Item</span>
+                                    <span>Medium</span>
+                                    <span>Large / Full Load</span>
+                                    <span>Multi-Load / Commercial</span>
+                                </div>
+                            </div>
+
+                            <!-- Location Area -->
+                            <div class="calc-step-group">
+                                <label class="calc-label">3. West Yorkshire Area</label>
+                                <select id="calcAreaSelect" class="calc-select">
+                                    <option value="Leeds">Leeds & Surrounds</option>
+                                    <option value="Bradford">Bradford & Surrounds</option>
+                                    <option value="Wakefield">Wakefield & Kirklees</option>
+                                    <option value="Huddersfield">Huddersfield & Calderdale</option>
+                                    <option value="Other">Other West Yorkshire Region</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Estimate Result Card -->
+                    <div class="calc-result-col">
+                        <div class="calc-result-card">
+                            <div class="result-top">
+                                <span class="calc-badge-glow">INSTANT GUIDELINE ESTIMATE</span>
+                                <h3>Estimated Range</h3>
+                                <div class="price-display-box">
+                                    <span class="price-curr">£</span>
+                                    <span class="price-amount" id="calcPriceRange">110 - 190</span>
+                                </div>
+                                <p class="estimate-disclaimer">*Exact pricing confirmed upon reviewing site access,
+                                    precise volume, and materials. 100% Free & No-Obligation.</p>
+                            </div>
+
+                            <div class="result-details-list">
+                                <div class="r-item"><i class="fa-solid fa-check text-orange"></i> <span>Full labor &
+                                        site loading support</span></div>
+                                <div class="r-item"><i class="fa-solid fa-check text-orange"></i> <span>Prompt West
+                                        Yorkshire dispatch</span></div>
+                                <div class="r-item"><i class="fa-solid fa-check text-orange"></i> <span>Responsible,
+                                        compliant disposal</span></div>
+                            </div>
+
+                            <button type="button" class="btn btn-orange-glow w-100" id="applyEstimateToQuoteBtn">
+                                <span>LOCK IN THIS ESTIMATE & BOOK</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (4 Pillars) -->
+    <section class="why-us-section">
+        <div class="container">
+            <div class="section-head text-center reveal-fade-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span>THE AA STANDARD</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-heading">
+                    WHY <span class="text-orange">AA SITE SOLUTIONS?</span>
+                </h2>
+                <p class="section-subtext">
+                    Straightforward, dedicated support focused on dependable results and local accountability.
+                </p>
+            </div>
+
+            <div class="why-cards-grid">
+                <div class="why-card reveal-fade-up delay-1">
+                    <div class="why-top">
+                        <span class="why-num">01</span>
+                        <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    </div>
+                    <h3>RELIABLE</h3>
+                    <p>Professional service focused on getting the job done properly without unnecessary delays or
+                        excuses.</p>
+                </div>
+
+                <div class="why-card reveal-fade-up delay-2">
+                    <div class="why-top">
+                        <span class="why-num">02</span>
+                        <div class="why-icon"><i class="fa-solid fa-gears"></i></div>
+                    </div>
+                    <h3>PRACTICAL</h3>
+                    <p>Straightforward solutions designed around your specific project size, budget, and logistical
+                        constraints.</p>
+                </div>
+
+                <div class="why-card reveal-fade-up delay-3">
+                    <div class="why-top">
+                        <span class="why-num">03</span>
+                        <div class="why-icon"><i class="fa-solid fa-comments"></i></div>
+                    </div>
+                    <h3>RESPONSIVE</h3>
+                    <p>Clear, direct communication from your initial enquiry through to final clearance and project
+                        sign-off.</p>
+                </div>
+
+                <div class="why-card reveal-fade-up delay-4">
+                    <div class="why-top">
+                        <span class="why-num">04</span>
+                        <div class="why-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+                    </div>
+                    <h3>LOCAL</h3>
+                    <p>Proudly serving domestic and commercial clients across West Yorkshire and surrounding regions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works (4-Step Animated Timeline) -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-head text-center reveal-fade-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span>4-STEP WORKFLOW</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-heading">
+                    HOW IT <span class="text-orange">WORKS</span>
+                </h2>
+                <p class="section-subtext">
+                    From your initial enquiry to completed site sign-off, our workflow is simple, clear, and
+                    transparent.
+                </p>
+            </div>
+
+            <div class="timeline-wrapper reveal-fade-up">
+                <div class="timeline-track-bar"></div>
+                <div class="timeline-steps-grid">
+                    <!-- Step 1 -->
+                    <div class="tstep-card">
+                        <div class="tstep-badge">1</div>
+                        <span class="tstep-label">STEP 01</span>
+                        <h4>GET IN TOUCH</h4>
+                        <p>Tell us about your project or waste removal requirements via our instant quote form or direct
+                            messaging.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="tstep-card">
+                        <div class="tstep-badge">2</div>
+                        <span class="tstep-label">STEP 02</span>
+                        <h4>DISCUSS SCOPE</h4>
+                        <p>We review your site requirements, volume, or building plans to establish the right solution.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="tstep-card">
+                        <div class="tstep-badge">3</div>
+                        <span class="tstep-label">STEP 03</span>
+                        <h4>RECEIVE QUOTE</h4>
+                        <p>Receive a clear, competitive quotation based specifically on your exact project needs with
+                            zero hidden fees.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="tstep-card">
+                        <div class="tstep-badge">4</div>
+                        <span class="tstep-label">STEP 04</span>
+                        <h4>JOB COMPLETED</h4>
+                        <p>We execute the agreed works safely, punctually, and to high professional British standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-cta-center text-center reveal-fade-up delay-2">
+                <a href="#quote-section" class="btn btn-orange-glow btn-lg">
+                    <span>START STEP 1: GET A FREE QUOTE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase & Filterable Gallery -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-head text-center reveal-fade-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span>WORK CAPABILITIES</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-heading">
+                    PROJECT <span class="text-orange">SHOWCASE</span>
+                </h2>
+                <p class="section-subtext">
+                    Examples of construction support, site waste clearance, and garden maintenance across West
+                    Yorkshire.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="gallery-filter-buttons reveal-fade-up">
+                <button class="g-filter-btn active" data-filter="all">All Projects</button>
+                <button class="g-filter-btn" data-filter="waste">Waste Removal</button>
+                <button class="g-filter-btn" data-filter="building">Building Services</button>
+                <button class="g-filter-btn" data-filter="garden">Garden Maintenance</button>
+                <button class="g-filter-btn" data-filter="contracts">Contracts Management</button>
+            </div>
+
+            <!-- Gallery Cards Grid -->
+            <div class="gallery-cards-grid" id="galleryGrid">
+                <!-- Project 1 -->
+                <div class="g-card-wrap" data-category="waste">
+                    <div class="project-card">
+                        <div class="project-thumb" style="background-image: url('assets/images/waste-removal.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Waste Removal</span>
+                                <h4>Commercial Site Clearance</h4>
+                                <p>Prompt trade rubble and renovation debris clearing for active turnover.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Commercial Site Clearance', 'Waste Removal', 'West Yorkshire', 'Complete clearance of masonry rubble and construction trade waste to allow following trades on site without downtime.')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="g-card-wrap" data-category="building">
+                    <div class="project-card">
+                        <div class="project-thumb"
+                            style="background-image: url('assets/images/hero-construction.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Building Services</span>
+                                <h4>Residential Structural Works</h4>
+                                <p>Wall alterations, brick repairs, and preparatory ground works.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Residential Structural Works', 'Building Services', 'West Yorkshire', 'Quality structural building and domestic modifications completed to building regulation standards.')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="g-card-wrap" data-category="garden">
+                    <div class="project-card">
+                        <div class="project-thumb" style="background-image: url('assets/images/thermal-deweed.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Garden Maintenance</span>
+                                <h4>Thermal Propane De-Weeding</h4>
+                                <p>Chemical-free weed control killing roots with intense heat treatment.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Thermal Propane De-Weeding', 'Garden Maintenance', 'West Yorkshire', 'Eco-friendly and chemical-free thermal de-weeding destroying stubborn weeds at the root, safe for families and pets.')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="g-card-wrap" data-category="contracts">
+                    <div class="project-card">
+                        <div class="project-thumb"
+                            style="background-image: url('assets/images/hero-construction.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Contracts Management</span>
+                                <h4>Sub-Contractor Coordination</h4>
+                                <p>Multi-trade site supervision, safety monitoring and milestone delivery.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Sub-Contractor Coordination', 'Contracts Management', 'West Yorkshire', 'Professional site contracts management aligning trades, schedule compliance, and logistics.')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="g-card-wrap" data-category="waste">
+                    <div class="project-card">
+                        <div class="project-thumb" style="background-image: url('assets/images/site-clean.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Waste Removal</span>
+                                <h4>Domestic Renovation Clearance</h4>
+                                <p>Full kitchen, bathroom, and household scrap disposal.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Domestic Renovation Clearance', 'Waste Removal', 'West Yorkshire', 'Fast removal and eco-responsible disposal of refurbishment materials and bulky domestic waste.')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="g-card-wrap" data-category="building">
+                    <div class="project-card">
+                        <div class="project-thumb"
+                            style="background-image: url('assets/images/hero-construction.jpg');">
+                            <div class="project-overlay">
+                                <span class="proj-badge">Building Services</span>
+                                <h4>Ground Preparation & Masonry</h4>
+                                <p>Leveling, foundation prep, and brick wall refurbishment.</p>
+                                <button class="btn-proj-detail"
+                                    onclick="showProjectDetails('Ground Preparation & Masonry', 'Building Services', 'West Yorkshire', 'Precision ground clearing and expert brickwork support for construction contractors.')">
+                                    <i class="fa-solid fa-expand"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Details Modal -->
+            <div id="projectModal" class="project-modal" aria-hidden="true">
+                <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+                <div class="modal-box">
+                    <button class="modal-close" onclick="closeProjectModal()" aria-label="Close dialog"><i
+                            class="fa-solid fa-xmark"></i></button>
+                    <div class="modal-content">
+                        <span class="m-badge" id="mCategory">Category</span>
+                        <h3 id="mTitle">Project Title</h3>
+                        <p class="m-loc"><i class="fa-solid fa-location-dot text-orange"></i> <span id="mLocation">West
+                                Yorkshire</span></p>
+                        <p class="m-desc" id="mDesc">Project detailed description.</p>
+                        <div class="m-actions">
+                            <a href="#quote-section" class="btn btn-orange-glow btn-sm" onclick="closeProjectModal()">
+                                <span>GET QUOTE FOR SIMILAR WORK</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-counter-grid">
+                <div class="stat-item reveal-fade-up">
+                    <div class="stat-icon"><i class="fa-solid fa-map-pin"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+                    <div class="stat-title">West Yorkshire Focused</div>
+                    <p class="stat-desc">Dedicated local coverage</p>
+                </div>
+
+                <div class="stat-item reveal-fade-up delay-1">
+                    <div class="stat-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="4">0</span>+</div>
+                    <div class="stat-title">Core Service Divisions</div>
+                    <p class="stat-desc">Building, Waste, Management & Garden</p>
+                </div>
+
+                <div class="stat-item reveal-fade-up delay-2">
+                    <div class="stat-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <div class="stat-number">FAST</div>
+                    <div class="stat-title">Response Times</div>
+                    <p class="stat-desc">Prompt quote turnarounds</p>
+                </div>
+
+                <div class="stat-item reveal-fade-up delay-3">
+                    <div class="stat-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="stat-number">DIRECT</div>
+                    <div class="stat-title">Contractor Support</div>
+                    <p class="stat-desc">Residential & Commercial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Reviews / Google Reviews Hub -->
+    <section class="reviews-hub-section">
+        <div class="container">
+            <div class="reviews-hub-box reveal-fade-up">
+                <div class="hub-left">
+                    <div class="google-badge-pill">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Google Business Reviews & Client Feedback</span>
+                    </div>
+                    <h3>Committed to Reliable British Quality</h3>
+                    <p>
+                        We take pride in every building task and site clearance we deliver across West Yorkshire. Client
+                        feedback is actively gathered as we complete residential and commercial projects.
+                    </p>
+                    <div class="live-reviews-status">
+                        <span class="live-dot-pulse"></span>
+                        <span>Verified reviews actively updating from real client works</span>
+                    </div>
+                </div>
+                <div class="hub-right">
+                    <div class="quote-symbol"><i class="fa-solid fa-quote-right"></i></div>
+                    <p class="featured-quote">"Professional coordination, prompt clearance, and straightforward
+                        communication on site."</p>
+                    <span class="quote-author">— AA Site Solutions Standard</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High Impact Call to Action (Dramatic Slate Accent) -->
+    <section class="banner-cta-section">
+        <div class="cta-glow-orb"></div>
+        <div class="container cta-container reveal-scale">
+            <div class="cta-left">
+                <span class="cta-badge">GET STARTED TODAY</span>
+                <h2 class="cta-title">READY TO GET YOUR PROJECT <span class="text-orange">MOVING?</span></h2>
+                <p class="cta-text">Tell us what you need and our team will help you find the right construction,
+                    building, or site waste clearance solution.</p>
+            </div>
+            <div class="cta-right">
+                <a href="#quote-section" class="btn btn-orange-glow btn-lg">
+                    <span>GET A FREE QUOTE</span>
+                    <i class="fa-solid fa-calculator"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary-clean btn-lg">
+                    <span>CONTACT US DIRECTLY</span>
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- High-Conversion Quote Request Form -->
+    <section id="quote-section" class="quote-section">
+        <div class="container">
+            <div class="quote-layout-grid">
+                <!-- Left Details -->
+                <div class="quote-text-side reveal-fade-right">
+                    <div class="section-tag">
+                        <span class="tag-line"></span>
+                        <span>FREE ESTIMATE</span>
+                    </div>
+                    <h2 class="section-heading">
+                        REQUEST A <span class="text-orange">FAST QUOTE</span>
+                    </h2>
+                    <p class="quote-lead">
+                        Fill out the details below and our team will review your specifications promptly to provide an
+                        accurate, competitive quote.
+                    </p>
+
+                    <div class="quote-guarantees">
+                        <div class="guarantee-row">
+                            <i class="fa-solid fa-circle-check text-orange"></i>
+                            <div>
+                                <strong>100% Free & No-Obligation</strong>
+                                <span>Clear pricing tailored strictly around your job</span>
+                            </div>
+                        </div>
+                        <div class="guarantee-row">
+                            <i class="fa-solid fa-circle-check text-orange"></i>
+                            <div>
+                                <strong>Residential & Commercial Works</strong>
+                                <span>Homeowners, developers, and trade contractors</span>
+                            </div>
+                        </div>
+                        <div class="guarantee-row">
+                            <i class="fa-solid fa-circle-check text-orange"></i>
+                            <div>
+                                <strong>Direct Site Team Access</strong>
+                                <span>Deal directly with experienced site personnel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-strip-mini">
+                        <div class="mini-c-item">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <div>
+                                <span class="mini-lbl">Operating Base</span>
+                                <strong>West Yorkshire, England, UK</strong>
+                            </div>
+                        </div>
+                        <div class="mini-c-item">
+                            <i class="fa-brands fa-tiktok"></i>
+                            <div>
+                                <span class="mini-lbl">Official Social</span>
+                                <strong>@aasitesolutionsuk</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Box -->
+                <div class="quote-form-side reveal-fade-left">
+                    <div class="form-card-clean">
+                        <form id="mainQuoteForm" novalidate>
+                            <div class="form-head">
+                                <h3>Your Project Details</h3>
+                                <p>Fields with (*) are required for accurate quoting.</p>
+                            </div>
+
+                            <div class="form-inputs-grid">
+                                <div class="f-group">
+                                    <label for="fName">Full Name *</label>
+                                    <div class="f-input-wrap">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" id="fName" name="fullName" placeholder="e.g. John Smith"
+                                            required>
+                                    </div>
+                                    <span class="f-error">Please enter your name</span>
+                                </div>
+
+                                <div class="f-group">
+                                    <label for="fPhone">Phone Number *</label>
+                                    <div class="f-input-wrap">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <input type="tel" id="fPhone" name="phone" placeholder="e.g. 07123 456789"
+                                            required>
+                                    </div>
+                                    <span class="f-error">Please provide a valid phone</span>
+                                </div>
+
+                                <div class="f-group">
+                                    <label for="fEmail">Email Address *</label>
+                                    <div class="f-input-wrap">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="email" id="fEmail" name="email" placeholder="e.g. john@example.com"
+                                            required>
+                                    </div>
+                                    <span class="f-error">Please enter a valid email</span>
+                                </div>
+
+                                <div class="f-group">
+                                    <label for="fPostcode">West Yorkshire Postcode *</label>
+                                    <div class="f-input-wrap">
+                                        <i class="fa-solid fa-map-pin"></i>
+                                        <input type="text" id="fPostcode" name="postcode"
+                                            placeholder="e.g. LS1, BD1, WF1, HD1" required>
+                                    </div>
+                                    <span class="f-error">Please enter your postcode</span>
+                                </div>
+
+                                <div class="f-group">
+                                    <label for="fService">Service Required *</label>
+                                    <div class="f-input-wrap">
+                                        <i class="fa-solid fa-wrench"></i>
+                                        <select id="fService" name="serviceRequired" required>
+                                            <option value="">Select a service...</option>
+                                            <option value="Contracts Management">Contracts Management</option>
+                                            <option value="Building Services">Building Services</option>
+                                            <option value="Waste Removal">Waste Removal & Site Clearance</option>
+                                            <option value="Contractors & Sub-Contractors">Contractors & Sub-Contractors
+                                            </option>
+                                            <option value="Garden & Outdoor Maintenance">Garden & Outdoor Maintenance
+                                                (De-Weeding / Lawn)</option>
+                                            <option value="Other">Other Specific Requirement</option>
+                                        </select>
+                                    </div>
+                                    <span class="f-error">Please select a service</span>
+                                </div>
+
+                                <div class="f-group">
+                                    <label for="fClientType">Client Type</label>
+                                    <div class="f-input-wrap">
+                                        <i class="fa-solid fa-building"></i>
+                                        <select id="fClientType" name="clientType">
+                                            <option value="Homeowner">Homeowner / Domestic</option>
+                                            <option value="Property Developer">Property Developer</option>
+                                            <option value="Commercial Business">Commercial Business</option>
+                                            <option value="Landlord">Landlord / Letting Agent</option>
+                                            <option value="Main Contractor">Main Contractor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="f-group full">
+                                <label for="fDetails">Project Details & Requirements *</label>
+                                <div class="f-input-wrap">
+                                    <textarea id="fDetails" name="projectDetails" rows="4"
+                                        placeholder="Describe the work required, estimated waste volume, site access, or desired start date..."
+                                        required></textarea>
+                                </div>
+                                <span class="f-error">Please provide project details</span>
+                            </div>
+
+                            <!-- Drag & Drop Photo Upload -->
+                            <div class="f-group full">
+                                <label>Optional: Upload Site Photos / Documents</label>
+                                <div class="file-upload-zone" id="fileUploadZone">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    <p><strong>Click to browse</strong> or drag & drop files here</p>
+                                    <span class="f-hint">Images or PDFs up to 10MB</span>
+                                    <input type="file" id="fFileInput" multiple accept="image/*,.pdf" class="d-none">
+                                    <div id="fileUploadPreview" class="file-preview-wrap"></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" id="fSubmitBtn" class="btn btn-orange-glow w-100 btn-submit-quote">
+                                <span class="btn-lbl">SUBMIT QUOTE ENQUIRY</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span class="btn-spinner d-none"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                            </button>
+
+                            <div id="fSuccessMsg" class="form-feedback-card d-none"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & West Yorkshire Coverage -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-head text-center reveal-fade-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span>DIRECT ENQUIRIES</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-heading">
+                    LET'S TALK ABOUT <span class="text-orange">YOUR PROJECT</span>
+                </h2>
+                <p class="section-subtext">
+                    Reach out for general enquiries, contractor partnerships, or urgent site waste clearances.
+                </p>
+            </div>
+
+            <div class="contact-cards-row reveal-fade-up">
+                <div class="c-card">
+                    <div class="c-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3>Operating Base</h3>
+                    <p class="c-val">West Yorkshire, England</p>
+                    <span class="c-sub">Leeds, Bradford, Wakefield, Huddersfield & Halifax.</span>
+                </div>
+
+                <div class="c-card highlight">
+                    <div class="c-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Digital Channels</h3>
+                    <p class="c-val">Fast Direct Response</p>
+                    <div class="c-quick-links">
+                        <a href="#quote-section" class="btn btn-orange-glow btn-sm">Request Quote</a>
+                        <a href="https://www.tiktok.com/@aasitesolutionsuk" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-secondary-clean btn-sm">
+                            <i class="fa-brands fa-tiktok"></i> TikTok
+                        </a>
+                    </div>
+                </div>
+
+                <div class="c-card">
+                    <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Operating Hours</h3>
+                    <p class="c-val">Monday – Saturday</p>
+                    <span class="c-sub">07:30 AM – 06:00 PM (Emergency clearance on request)</span>
+                </div>
+            </div>
+
+            <!-- Regional Coverage Representation -->
+            <div class="coverage-box reveal-scale">
+                <div class="cov-head">
+                    <span class="cov-tag"><i class="fa-solid fa-globe"></i> REGIONAL COVERAGE</span>
+                    <h4>West Yorkshire & Surrounding Metropolitan Districts</h4>
+                </div>
+                <div class="cov-display">
+                    <div class="radar-pulse-graphic">
+                        <div class="radar-ring r-1"></div>
+                        <div class="radar-ring r-2"></div>
+                        <div class="radar-ring r-3"></div>
+                        <div class="radar-center-mark">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>West Yorkshire</span>
+                        </div>
+                    </div>
+                    <div class="cov-district-tags">
+                        <span class="dtag">Leeds</span>
+                        <span class="dtag">Bradford</span>
+                        <span class="dtag">Wakefield</span>
+                        <span class="dtag">Huddersfield</span>
+                        <span class="dtag">Halifax</span>
+                        <span class="dtag">Kirklees</span>
+                        <span class="dtag">Calderdale</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand -->
+                <div class="footer-col brand-col">
+                    <a href="#home" class="footer-logo-link">
+                        <img src="assets/images/logo-white.svg" alt="AA Site Solutions Logo" class="footer-brand-logo">
+                    </a>
+                    <p class="footer-desc">
+                        Practical construction, building services, contracts management, and waste removal solutions
+                        across West Yorkshire, England.
+                    </p>
+                    <div class="footer-loc-pill">
+                        <i class="fa-solid fa-location-dot text-orange"></i>
+                        <span>West Yorkshire, England, UK</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="f-head">QUICK LINKS</h4>
+                    <ul class="f-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#waste-removal">Waste Clearance</a></li>
+                        <li><a href="#calculator">Cost Estimator</a></li>
+                        <li><a href="#process">How It Works</a></li>
+                        <li><a href="#projects">Project Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4 class="f-head">OUR SERVICES</h4>
+                    <ul class="f-links">
+                        <li><a href="#services">Contracts Management</a></li>
+                        <li><a href="#services">Building Services</a></li>
+                        <li><a href="#waste-removal">Waste Removal & Clearance</a></li>
+                        <li><a href="#services">Contractors & Sub-Contractors</a></li>
+                        <li><a href="#services">Garden & Site Maintenance</a></li>
+                        <li><a href="#services">Propane Thermal De-Weeding</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Connect -->
+                <div class="footer-col">
+                    <h4 class="f-head">CONNECT WITH US</h4>
+                    <p class="f-social-text">Follow our recent site projects, waste removals, and announcements:</p>
+                    <div class="f-social-btns">
+                        <a href="https://www.tiktok.com/@aasitesolutionsuk" target="_blank" rel="noopener noreferrer"
+                            class="soc-btn" aria-label="TikTok Profile">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#quote-section" class="soc-btn" aria-label="Email Enquiry">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="f-cta-wrap">
+                        <a href="#quote-section" class="btn btn-orange-glow btn-sm w-100">
+                            <span>REQUEST QUOTE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 AA Site Solutions. All Rights Reserved.</p>
+                <div class="f-legal">
+                    <a href="#contact">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#contact">Cookie Policy</a>
+                    <span>•</span>
+                    <a href="#contact">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Tools / Mobile Bottom Bar -->
+    <div class="floating-dock">
+        <button id="dockScrollTop" class="dock-btn" aria-label="Scroll to top">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span class="dock-tip">Top</span>
+        </button>
+        <a href="#services" class="dock-btn" aria-label="Services">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span class="dock-tip">Services</span>
+        </a>
+        <a href="#calculator" class="dock-btn calc" aria-label="Cost Estimator">
+            <i class="fa-solid fa-sliders"></i>
+            <span class="dock-tip">Estimator</span>
+        </a>
+        <a href="#quote-section" class="dock-btn quote" aria-label="Get Free Quote">
+            <i class="fa-solid fa-calculator"></i>
+            <span class="dock-tip">Get Quote</span>
+        </a>
+        <a href="https://www.tiktok.com/@aasitesolutionsuk" target="_blank" rel="noopener noreferrer"
+            class="dock-btn tiktok" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+            <span class="dock-tip">TikTok</span>
+        </a>
+    </div>
+
+    <!-- JavaScript Application -->
+    <script src="app.js"></script>
+</body>
+
+</html>
